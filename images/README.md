@@ -3,11 +3,12 @@
 Place site images here.
 
 ## Logo
-Save the Hope Hub logo in this folder as:
+`hopehub.png` is the Hope Hub logo. It is currently used only as the
+browser-tab icon (favicon) referenced by every page as `images/hopehub.png`.
 
-    hope-hub-logo.png
+The nav bar and footers use the **text** wordmark "Hope Hub" plus the
+tagline "Bringing hope, shaping tomorrow" rather than the image, because
+the logo has a solid dark background.
 
-The nav bar, page footers, and browser tab icon (favicon) all reference
-`images/hope-hub-logo.png`. For the nav bar (which has a light background),
-a **transparent-background PNG** looks best. The footers have a dark
-background, so the logo's dark backdrop blends in there either way.
+If you later add a **transparent-background** version of the logo, it can
+be placed in the nav bar and footers for a cleaner look.

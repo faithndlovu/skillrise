@@ -19,8 +19,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;background:rgba(253,252,248,0.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);}
 .nav-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--green);letter-spacing:-0.02em;cursor:pointer;text-decoration:none;}
 .nav-logo span{color:var(--amber);}
-.nav-logo-img{height:48px;width:auto;display:block;}
-.footer-logo-img{height:64px;width:auto;display:block;margin-bottom:0.75rem;}
 .nav-links{display:flex;gap:1.75rem;align-items:center;}
 .nav-links a{font-size:0.875rem;font-weight:500;color:var(--muted);text-decoration:none;cursor:pointer;transition:color 0.2s;padding:0.25rem 0;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s;}
 .nav-links a:hover,.nav-links a.active{color:var(--green);border-bottom-color:var(--green-mid);}
@@ -255,6 +253,7 @@ footer{background:var(--dark);padding:4rem 3rem 2rem;}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
 .footer-brand .logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--white);display:block;margin-bottom:0.75rem;}
 .footer-brand .logo span{color:var(--amber-mid);}
+.footer-tagline{font-style:italic;font-size:0.82rem;color:var(--amber-mid);margin-bottom:0.75rem;}
 .footer-brand p{font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.7;max-width:240px;}
 .footer-col h5{font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1rem;}
 .footer-col a{display:block;font-size:0.85rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.5rem;cursor:pointer;transition:color 0.2s;}
@@ -269,7 +268,6 @@ footer{background:var(--dark);padding:4rem 3rem 2rem;}
   .story-grid,.donate-grid,.contact-grid,.enrol-grid{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr 1fr;}
   nav{padding:1rem 1.5rem;}
-  .nav-logo-img{height:42px;}
   .nav-links{display:none;}
   .hamburger{display:flex;}
   .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
