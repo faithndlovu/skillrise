@@ -20,7 +20,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .nav-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--green);letter-spacing:-0.02em;cursor:pointer;text-decoration:none;}
 .nav-logo span{color:var(--amber);}
 .nav-logo-img{height:50px;width:auto;display:block;}
-.footer-logo-img{height:120px;width:auto;display:block;margin-bottom:0.5rem;}
+.footer-logo-img{box-sizing:content-box;height:58px;width:auto;display:block;margin-bottom:0.85rem;background:#fff;padding:10px 16px;border-radius:12px;}
 .nav-links{display:flex;gap:1.75rem;align-items:center;}
 .nav-links a{font-size:0.875rem;font-weight:500;color:var(--muted);text-decoration:none;cursor:pointer;transition:color 0.2s;padding:0.25rem 0;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s;}
 .nav-links a:hover,.nav-links a.active{color:var(--green);border-bottom-color:var(--green-mid);}
