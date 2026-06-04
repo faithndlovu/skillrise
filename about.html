@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About — SkillRise Initiative</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- BLOBS (hero bg decorations) -->
+<div class="hero-blob1"></div>
+<div class="hero-blob2"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Skill<span>Rise</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="about.html" data-page="about.html">About</a>
+    <a href="skills.html" data-page="skills.html">Our Skills</a>
+    <a href="impact.html" data-page="impact.html">Impact</a>
+    <a href="enrol.html" data-page="enrol.html">Enrol</a>
+    <a href="contact.html" data-page="contact.html">Contact</a>
+    <a href="donate.html" data-page="donate.html" class="nav-cta">Donate</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Our Skills</a>
+  <a href="impact.html">Impact</a>
+  <a href="enrol.html">Enrol</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html" style="color:var(--green);font-weight:700;">Donate →</a>
+</div>
+
+<!-- ════════════════════════════════════════ ABOUT ════════════════════════════════════════ -->
+<div class="page active" id="page-about">
+  <div class="about-hero">
+    <div class="container">
+      <div class="section-tag">Our Story</div>
+      <div class="section-title">A small idea that grew into a movement</div>
+      <p class="section-sub">SkillRise started with one person, one skill, and a belief that young people in our communities deserved more than unemployment — they deserved a real chance.</p>
+    </div>
+  </div>
+
+  <div class="about-story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-text">
+          <h3>Where it all began</h3>
+          <p>The initiative started informally — a few young people gathering to learn boma sewing in a backyard. Word spread quickly. More youth came. Then parents started asking how their children could join. Within months, what began as an informal gathering had become a structured programme training dozens of young people every month.</p>
+          <p>Today, SkillRise offers over 8 vocational programmes, has reached multiple communities, and has helped hundreds of young people start earning real income. But the heart of it remains the same: practical skills, community support, and the belief that potential just needs the right environment to flourish.</p>
+          <p style="margin-bottom:0;">We're growing — and we're just getting started.</p>
+        </div>
+        <div class="story-visual">
+          <div class="story-quote">Every young person has something to offer. Our job is just to give them the tools to show the world what that is.</div>
+          <div class="story-attr">— SkillRise Founder</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-values">
+    <div class="container">
+      <div class="section-tag">Our Values</div>
+      <div class="section-title">What drives everything we do</div>
+      <div class="values-grid">
+        <div class="value-card"><div class="value-num">01</div><h4>Accessibility</h4><p>Skills training should never be out of reach. We keep costs low and remove every barrier we can.</p></div>
+        <div class="value-card"><div class="value-num">02</div><h4>Practical impact</h4><p>We measure success in income earned and businesses started — not just certificates issued.</p></div>
+        <div class="value-card"><div class="value-num">03</div><h4>Community first</h4><p>Every decision we make is rooted in the needs of the young people and families we serve.</p></div>
+        <div class="value-card"><div class="value-num">04</div><h4>Dignity</h4><p>We treat every participant with respect — as someone building a future, not receiving charity.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <div class="container">
+      <div class="section-tag">The Team</div>
+      <div class="section-title">The people behind SkillRise</div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar" style="background:var(--green-light);">👩🏾</div>
+          <div class="team-info"><h4>Founder & Director</h4><p>Visionary behind the initiative. Leads strategy and community partnerships.</p></div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:var(--amber-light);">👨🏾</div>
+          <div class="team-info"><h4>Head of Training</h4><p>Designs curriculum and manages our team of vocational mentors.</p></div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:var(--teal-light);">👩🏽</div>
+          <div class="team-info"><h4>Community Liaison</h4><p>Connects with families, enrols participants, and tracks graduate progress.</p></div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar" style="background:var(--coral-light);">👨🏿</div>
+          <div class="team-info"><h4>Operations Lead</h4><p>Handles logistics, materials, and donor reporting to keep everything running.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo">Skill<span>Rise</span></span><p>Equipping young people with the skills to build their own futures.</p></div>
+        <div class="footer-col"><h5>Pages</h5><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="impact.html">Impact</a></div>
+        <div class="footer-col"><h5>Get Involved</h5><a href="enrol.html">Enrol</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h5>Contact</h5><a href="#">info@skillrise.org</a><a href="#">WhatsApp</a><a href="#">Facebook</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SkillRise Initiative.</p><p>Built with purpose 🌱</p></div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

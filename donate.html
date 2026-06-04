@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Donate — SkillRise Initiative</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- BLOBS (hero bg decorations) -->
+<div class="hero-blob1"></div>
+<div class="hero-blob2"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Skill<span>Rise</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="about.html" data-page="about.html">About</a>
+    <a href="skills.html" data-page="skills.html">Our Skills</a>
+    <a href="impact.html" data-page="impact.html">Impact</a>
+    <a href="enrol.html" data-page="enrol.html">Enrol</a>
+    <a href="contact.html" data-page="contact.html">Contact</a>
+    <a href="donate.html" data-page="donate.html" class="nav-cta">Donate</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Our Skills</a>
+  <a href="impact.html">Impact</a>
+  <a href="enrol.html">Enrol</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html" style="color:var(--green);font-weight:700;">Donate →</a>
+</div>
+
+<!-- ════════════════════════════════════════ DONATE ════════════════════════════════════════ -->
+<div class="page active" id="page-donate">
+  <div class="donate-hero">
+    <div class="container">
+      <div class="section-tag">Support the Initiative</div>
+      <div class="section-title">Your donation trains a young person</div>
+      <p class="section-sub">Every dollar goes directly into training materials, tools, and mentorship. Help us reach more youth in our communities.</p>
+    </div>
+  </div>
+
+  <div class="donate-main">
+    <div class="container">
+      <div class="donate-grid">
+        <div>
+          <div class="section-tag">Choose Your Impact</div>
+          <div class="section-title" style="font-size:1.8rem;">What your donation does</div>
+          <div class="donate-tiers">
+            <div class="tier-card" onclick="selectTier(this,'$10')">
+              <div class="tier-card-header"><span class="tier-amount">$10</span></div>
+              <div class="tier-desc">Covers supplies for one training session — thread, wax, flour, or seeds depending on the skill.</div>
+              <div class="tier-impact">→ Covers 1 session for 3 youth</div>
+            </div>
+            <div class="tier-card" onclick="selectTier(this,'$25')">
+              <div class="tier-card-header"><span class="tier-amount">$25</span></div>
+              <div class="tier-desc">Covers a full week of materials and equipment use for one participant across any skill programme.</div>
+              <div class="tier-impact">→ Funds 1 week of training</div>
+            </div>
+            <div class="tier-card featured" onclick="selectTier(this,'$50')">
+              <div class="tier-card-header"><span class="tier-amount">$50</span><span class="tier-badge">Most Impactful</span></div>
+              <div class="tier-desc">Sponsors one youth through an entire short programme from start to certificate. Covers all materials and mentoring.</div>
+              <div class="tier-impact">→ Fully sponsors 1 youth programme</div>
+            </div>
+            <div class="tier-card" onclick="selectTier(this,'$100')">
+              <div class="tier-card-header"><span class="tier-amount">$100</span></div>
+              <div class="tier-desc">Funds a full training cohort's worth of supplies, plus transport support for young people who travel to attend.</div>
+              <div class="tier-impact">→ Supports a full training group</div>
+            </div>
+            <div class="tier-card" onclick="selectTier(this,'Custom')">
+              <div class="tier-card-header"><span class="tier-amount">Custom</span></div>
+              <div class="tier-desc">Give any amount that works for you. Every contribution, large or small, makes a meaningful difference.</div>
+              <div class="tier-impact">→ Every cent goes to training</div>
+            </div>
+          </div>
+        </div>
+
+        <form class="donate-form-box" id="donateForm" data-success="donateSuccess">
+          <h3>Make a donation</h3>
+          <p>Complete the form below and we'll follow up with payment details.</p>
+          <input type="hidden" name="subject" value="New SkillRise donation pledge"/>
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off"/>
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="Name" placeholder="Your full name" required/>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="Email" placeholder="your@email.com" required/>
+          </div>
+          <div class="form-group">
+            <label>Donation Amount</label>
+            <input type="text" id="donateAmountInput" name="Amount" placeholder="e.g. $50 or enter custom amount" required/>
+          </div>
+          <div class="form-group">
+            <label>Payment Method Preference</label>
+            <select name="Payment Method">
+              <option>Bank Transfer</option>
+              <option>EcoCash / Mobile Money</option>
+              <option>Card Payment</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message (optional)</label>
+            <textarea name="Message" placeholder="Anything you'd like us to know…"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;padding:1rem;border-radius:12px;font-size:0.95rem;">Submit Donation →</button>
+          <div class="donate-trust">
+            <span class="trust-badge">100% goes to training</span>
+            <span class="trust-badge">Donation receipt provided</span>
+            <span class="trust-badge">Secure process</span>
+          </div>
+          <div class="success-msg" id="donateSuccess">🎉 Thank you! We'll be in touch shortly with payment details.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-methods">
+    <div class="container">
+      <div class="section-tag">Payment Options</div>
+      <div class="section-title" style="font-size:1.8rem;">We accept multiple methods</div>
+      <div class="methods-grid">
+        <div class="method-card"><div class="method-icon">🏦</div><h4>Bank Transfer</h4><p>Direct transfer to our account. Details provided on request.</p></div>
+        <div class="method-card"><div class="method-icon">📱</div><h4>EcoCash / Mobile Money</h4><p>Fast and easy mobile payment — most preferred locally.</p></div>
+        <div class="method-card"><div class="method-icon">💳</div><h4>Card Payment</h4><p>Visa and Mastercard accepted via secure payment link.</p></div>
+        <div class="method-card"><div class="method-icon">🌍</div><h4>International Transfer</h4><p>For donors outside Zimbabwe — USD and other currencies welcome.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo">Skill<span>Rise</span></span><p>Equipping young people with the skills to build their own futures.</p></div>
+        <div class="footer-col"><h5>Pages</h5><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="impact.html">Impact</a></div>
+        <div class="footer-col"><h5>Get Involved</h5><a href="enrol.html">Enrol</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h5>Contact</h5><a href="#">info@skillrise.org</a><a href="#">WhatsApp</a><a href="#">Facebook</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SkillRise Initiative.</p><p>Built with purpose 🌱</p></div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SkillRise Initiative</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- BLOBS (hero bg decorations) -->
+<div class="hero-blob1"></div>
+<div class="hero-blob2"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Skill<span>Rise</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="about.html" data-page="about.html">About</a>
+    <a href="skills.html" data-page="skills.html">Our Skills</a>
+    <a href="impact.html" data-page="impact.html">Impact</a>
+    <a href="enrol.html" data-page="enrol.html">Enrol</a>
+    <a href="contact.html" data-page="contact.html">Contact</a>
+    <a href="donate.html" data-page="donate.html" class="nav-cta">Donate</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Our Skills</a>
+  <a href="impact.html">Impact</a>
+  <a href="enrol.html">Enrol</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html" style="color:var(--green);font-weight:700;">Donate →</a>
+</div>
+
+<!-- ════════════════════════════════════════ HOME ════════════════════════════════════════ -->
+<div class="page active" id="page-home">
+
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-badge">🌱 Youth Empowerment Initiative</div>
+        <h1>Turning <em>potential</em><br>into a livelihood</h1>
+        <p class="hero-sub">We equip young people with hands-on, income-generating skills — from boma sewing to bakery, candle making to agriculture. Practical. Affordable. Life-changing.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="enrol.html">Join the Programme</a>
+          <a class="btn-outline" href="donate.html">Support a Youth</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hv-card"><div class="icon">🧵</div><h3>Boma Sewing</h3><p>Fashion & garment production</p></div>
+        <div class="hv-card"><div class="icon">🕯️</div><h3>Candle Making</h3><p>Handcrafted candles to sell</p></div>
+        <div class="hv-card"><div class="icon">🌾</div><h3>Agriculture</h3><p>Modern farming & agri-biz</p></div>
+        <div class="hv-card"><div class="icon">🥖</div><h3>Bakery</h3><p>Breads, pastries & cakes</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat"><div class="stat-num">200<span>+</span></div><div class="stat-label">Youth trained so far</div></div>
+    <div class="stat"><div class="stat-num">8<span>+</span></div><div class="stat-label">Skill programmes</div></div>
+    <div class="stat"><div class="stat-num">70<span>%</span></div><div class="stat-label">Graduates now earning</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Communities reached</div></div>
+  </div>
+
+  <div class="home-why">
+    <div class="container">
+      <div class="section-tag">Why SkillRise</div>
+      <div class="section-title">Built for young people who are ready to work</div>
+      <p class="section-sub">We remove every barrier between a young person and a sustainable income.</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon" style="background:var(--green-light);">🎯</div>
+          <h4>Practical, not theoretical</h4>
+          <p>Every session is hands-on. Participants leave with actual products they made themselves — ready to sell.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="background:var(--amber-light);">💰</div>
+          <h4>Affordable access</h4>
+          <p>Low or no cost to enrol. We believe your financial situation shouldn't determine your future.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="background:var(--teal-light);">🤝</div>
+          <h4>Mentorship & support</h4>
+          <p>Our trainers stay involved even after graduation — helping young people grow their first businesses.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="background:var(--coral-light);">🌍</div>
+          <h4>Community rooted</h4>
+          <p>We grow within local communities, creating networks of young entrepreneurs who support each other.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-cta-strip">
+    <h2>Ready to join or support us?</h2>
+    <p>Whether you're a young person looking for skills or a donor who wants to make a real difference — there's a place for you here.</p>
+    <div class="cta-buttons">
+      <a class="btn-white" href="enrol.html">Enrol a Youth →</a>
+      <a class="btn-amber" href="donate.html">Become a Donor →</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo">Skill<span>Rise</span></span>
+          <p>Equipping young people with the skills to build their own futures — one community at a time.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Our Skills</a>
+          <a href="impact.html">Impact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Get Involved</h5>
+          <a href="enrol.html">Enrol Now</a>
+          <a href="donate.html">Donate</a>
+          <a href="contact.html">Become a Mentor</a>
+          <a href="contact.html">Partner With Us</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="#">info@skillrise.org</a>
+          <a href="#">WhatsApp Us</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SkillRise Initiative. All rights reserved.</p>
+        <p>Built with purpose 🌱</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

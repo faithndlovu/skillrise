@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Our Skills — SkillRise Initiative</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- BLOBS (hero bg decorations) -->
+<div class="hero-blob1"></div>
+<div class="hero-blob2"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Skill<span>Rise</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="about.html" data-page="about.html">About</a>
+    <a href="skills.html" data-page="skills.html">Our Skills</a>
+    <a href="impact.html" data-page="impact.html">Impact</a>
+    <a href="enrol.html" data-page="enrol.html">Enrol</a>
+    <a href="contact.html" data-page="contact.html">Contact</a>
+    <a href="donate.html" data-page="donate.html" class="nav-cta">Donate</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Our Skills</a>
+  <a href="impact.html">Impact</a>
+  <a href="enrol.html">Enrol</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html" style="color:var(--green);font-weight:700;">Donate →</a>
+</div>
+
+<!-- ════════════════════════════════════════ SKILLS ════════════════════════════════════════ -->
+<div class="page active" id="page-skills">
+  <div class="skills-hero">
+    <div class="container">
+      <div class="section-tag">What We Teach</div>
+      <div class="section-title">Practical skills that create real income</div>
+      <p class="section-sub" style="color:rgba(255,255,255,0.7);">Every programme is hands-on, market-driven, and designed so graduates can start earning immediately after completion.</p>
+    </div>
+  </div>
+
+  <div class="skills-filter">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn active" onclick="filterSkills('all',this)">All Skills</button>
+    <button class="filter-btn" onclick="filterSkills('craft',this)">Crafts & Making</button>
+    <button class="filter-btn" onclick="filterSkills('food',this)">Food & Drink</button>
+    <button class="filter-btn" onclick="filterSkills('agri',this)">Agriculture</button>
+  </div>
+
+  <div class="skills-main">
+    <div class="container">
+      <div class="skills-big-grid" id="skillsGrid">
+        <div class="skill-detail-card" data-cat="craft">
+          <div class="skill-card-top">
+            <div class="skill-card-emoji">🧵</div>
+            <h3>Boma Sewing</h3>
+            <p>Learn garment construction, pattern cutting, and fashion design. Graduates can take orders, repair clothing, or start small fashion labels selling to local markets.</p>
+          </div>
+          <div class="skill-card-bottom"><span class="skill-tag">Craft</span><span class="skill-duration">⏱ 6 weeks</span></div>
+        </div>
+        <div class="skill-detail-card" data-cat="craft">
+          <div class="skill-card-top">
+            <div class="skill-card-emoji">🧴</div>
+            <h3>Detergent Making</h3>
+            <p>Formulate and produce household detergents, dish soap, and cleaning products using local materials. Low startup costs with strong local demand.</p>
+          </div>
+          <div class="skill-card-bottom"><span class="skill-tag">Craft</span><span class="skill-duration">⏱ 3 weeks</span></div>
+        </div>
+        <div class="skill-detail-card" data-cat="craft">
+          <div class="skill-card-top">
+            <div class="skill-card-emoji">🕯️</div>
+            <h3>Candle Making</h3>
+            <p>Create scented, decorative, and functional candles. Includes packaging and branding basics so graduates can sell to shops, events, and online customers.</p>
+          </div>
+          <div class="skill-card-bottom"><span class="skill-tag">Craft</span><span class="skill-duration">⏱ 3 weeks</span></div>
+        </div>
+        <div class="skill-detail-card" data-cat="food">
+          <div class="skill-card-top">
+            <div class="skill-card-emoji">🥤</div>
+            <h3>Drink Making</h3>
+            <p>Learn to produce fruit juices, cordials, herbal drinks and other beverages. Includes food safety, bottling, labelling and selling to local tuck shops and markets.</p>
+          </div>
+          <div class="skill-card-bottom"><span class="skill-tag">Food & Drink</span><span class="skill-duration">⏱ 4 weeks</span></div>
+        </div>
+        <div class="skill-detail-card" data-cat="food">
+          <div class="skill-card-top">
+            <div class="skill-card-emoji">🥖</div>
+            <h3>Bakery</h3>
+            <p>Master bread, cakes, scones, and confectionery production. Includes costing, pricing, and selling skills so graduates can supply households, events, and local shops.</p>
+          </div>
+          <div class="skill-card-bottom"><span class="skill-tag">Food & Drink</span><span class="skill-duration">⏱ 5 weeks</span></div>
+        </div>
+        <div class="skill-detail-card" data-cat="agri">
+          <div class="skill-card-top">
+            <div class="skill-card-emoji">🌾</div>
+            <h3>Agriculture</h3>
+            <p>Covers market gardening, small-scale crop production, and basic agri-business. Includes soil preparation, irrigation, and how to sell produce to markets and households.</p>
+          </div>
+          <div class="skill-card-bottom"><span class="skill-tag">Agriculture</span><span class="skill-duration">⏱ 8 weeks</span></div>
+        </div>
+        <div class="skill-detail-card" data-cat="craft">
+          <div class="skill-card-top">
+            <div class="skill-card-emoji">🎨</div>
+            <h3>Crafts & Art</h3>
+            <p>Handmade goods, decorative items, and creative crafts for local markets, events, and gift shops. Encourages entrepreneurship through creativity.</p>
+          </div>
+          <div class="skill-card-bottom"><span class="skill-tag">Craft</span><span class="skill-duration">⏱ 4 weeks</span></div>
+        </div>
+        <div class="skill-detail-card" data-cat="food">
+          <div class="skill-card-top">
+            <div class="skill-card-emoji">🍳</div>
+            <h3>Catering & Cooking</h3>
+            <p>Learn catering for events and functions, bulk cooking techniques, and food business basics. High demand for weddings, funerals, and community gatherings.</p>
+          </div>
+          <div class="skill-card-bottom"><span class="skill-tag">Food & Drink</span><span class="skill-duration">⏱ 6 weeks</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--dark);padding:4rem 3rem;text-align:center;">
+    <div class="section-title" style="color:#fff;max-width:500px;margin:0 auto 1rem;">Ready to start learning?</div>
+    <p style="color:rgba(255,255,255,0.5);max-width:400px;margin:0 auto 2rem;font-size:0.95rem;line-height:1.7;">Applications are open. Choose your programme and take the first step toward a livelihood.</p>
+    <a class="btn-amber" href="enrol.html">Enrol Now →</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo">Skill<span>Rise</span></span><p>Equipping young people with the skills to build their own futures.</p></div>
+        <div class="footer-col"><h5>Pages</h5><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="impact.html">Impact</a></div>
+        <div class="footer-col"><h5>Get Involved</h5><a href="enrol.html">Enrol</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h5>Contact</h5><a href="#">info@skillrise.org</a><a href="#">WhatsApp</a><a href="#">Facebook</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SkillRise Initiative.</p><p>Built with purpose 🌱</p></div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

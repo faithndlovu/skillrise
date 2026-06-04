@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Impact — SkillRise Initiative</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- BLOBS (hero bg decorations) -->
+<div class="hero-blob1"></div>
+<div class="hero-blob2"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Skill<span>Rise</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="about.html" data-page="about.html">About</a>
+    <a href="skills.html" data-page="skills.html">Our Skills</a>
+    <a href="impact.html" data-page="impact.html">Impact</a>
+    <a href="enrol.html" data-page="enrol.html">Enrol</a>
+    <a href="contact.html" data-page="contact.html">Contact</a>
+    <a href="donate.html" data-page="donate.html" class="nav-cta">Donate</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Our Skills</a>
+  <a href="impact.html">Impact</a>
+  <a href="enrol.html">Enrol</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html" style="color:var(--green);font-weight:700;">Donate →</a>
+</div>
+
+<!-- ════════════════════════════════════════ IMPACT ════════════════════════════════════════ -->
+<div class="page active" id="page-impact">
+  <div class="impact-hero">
+    <div class="container">
+      <div class="section-tag">Real Impact</div>
+      <div class="section-title">Numbers don't lie — lives are changing</div>
+      <p class="section-sub">From zero income to running a real business. Here's what SkillRise has made possible.</p>
+    </div>
+  </div>
+
+  <div class="impact-numbers">
+    <div class="numbers-grid">
+      <div class="big-number"><div class="num">200+</div><div class="label">Youth trained</div></div>
+      <div class="big-number"><div class="num">70%</div><div class="label">Now earning income</div></div>
+      <div class="big-number"><div class="num">8+</div><div class="label">Programmes running</div></div>
+      <div class="big-number"><div class="num">3</div><div class="label">Communities reached</div></div>
+      <div class="big-number"><div class="num">40+</div><div class="label">Micro-businesses started</div></div>
+    </div>
+  </div>
+
+  <div class="stories-section">
+    <div class="container">
+      <div class="section-tag">Graduate Stories</div>
+      <div class="section-title">Hear it from the people who lived it</div>
+      <div class="stories-grid">
+        <div class="story-card">
+          <div class="story-card-top">
+            <div class="story-stars">★★★★★</div>
+            <p>"Before this programme I had no income and no direction. After the boma sewing course I now take orders from my neighbourhood every week. I support my family."</p>
+          </div>
+          <div class="story-card-bottom">
+            <div class="story-name">Nomsa M.</div>
+            <div class="story-skill">Boma Sewing Graduate</div>
+          </div>
+        </div>
+        <div class="story-card">
+          <div class="story-card-top">
+            <div class="story-stars">★★★★★</div>
+            <p>"The bakery training was the best decision I made. Within two months I was already selling at the local market every Saturday morning. Now I have three regular bulk clients."</p>
+          </div>
+          <div class="story-card-bottom">
+            <div class="story-name">Tawanda K.</div>
+            <div class="story-skill">Bakery Graduate</div>
+          </div>
+        </div>
+        <div class="story-card">
+          <div class="story-card-top">
+            <div class="story-stars">★★★★★</div>
+            <p>"I learned to make detergents and cleaning products. Now I supply four shops in my area. It started with just a bucket and now it feels like a proper business."</p>
+          </div>
+          <div class="story-card-bottom">
+            <div class="story-name">Rudo C.</div>
+            <div class="story-skill">Detergent Making Graduate</div>
+          </div>
+        </div>
+        <div class="story-card">
+          <div class="story-card-top">
+            <div class="story-stars">★★★★★</div>
+            <p>"Agriculture training changed everything for me. I started a small market garden and now supply vegetables to my community twice a week. I have real income for the first time."</p>
+          </div>
+          <div class="story-card-bottom">
+            <div class="story-name">Farai N.</div>
+            <div class="story-skill">Agriculture Graduate</div>
+          </div>
+        </div>
+        <div class="story-card">
+          <div class="story-card-top">
+            <div class="story-stars">★★★★★</div>
+            <p>"The candle making course taught me more than just candles — it taught me how to run a business, price my products, and find customers. I now sell at three shops."</p>
+          </div>
+          <div class="story-card-bottom">
+            <div class="story-name">Mercy T.</div>
+            <div class="story-skill">Candle Making Graduate</div>
+          </div>
+        </div>
+        <div class="story-card">
+          <div class="story-card-top">
+            <div class="story-stars">★★★★★</div>
+            <p>"I was skeptical at first. Now I do catering for small events and earn more than I ever did before. SkillRise believed in me when I didn't quite believe in myself yet."</p>
+          </div>
+          <div class="story-card-bottom">
+            <div class="story-name">Blessing M.</div>
+            <div class="story-skill">Catering Graduate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-section">
+    <div class="container">
+      <div class="section-tag">From the Field</div>
+      <div class="section-title">A glimpse into our sessions</div>
+      <p class="section-sub" style="margin-bottom:2rem;">Real training, real people, real results.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item">🧵</div>
+        <div class="gallery-item">🥖</div>
+        <div class="gallery-item">🕯️</div>
+        <div class="gallery-item">🌾</div>
+        <div class="gallery-item">🧴</div>
+      </div>
+      <p style="font-size:0.8rem;color:var(--muted);margin-top:1rem;font-style:italic;">Photo gallery coming soon — add your own images here</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo">Skill<span>Rise</span></span><p>Equipping young people with the skills to build their own futures.</p></div>
+        <div class="footer-col"><h5>Pages</h5><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="impact.html">Impact</a></div>
+        <div class="footer-col"><h5>Get Involved</h5><a href="enrol.html">Enrol</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h5>Contact</h5><a href="#">info@skillrise.org</a><a href="#">WhatsApp</a><a href="#">Facebook</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SkillRise Initiative.</p><p>Built with purpose 🌱</p></div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

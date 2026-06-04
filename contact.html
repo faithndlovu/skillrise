@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — SkillRise Initiative</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- BLOBS (hero bg decorations) -->
+<div class="hero-blob1"></div>
+<div class="hero-blob2"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">Skill<span>Rise</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="about.html" data-page="about.html">About</a>
+    <a href="skills.html" data-page="skills.html">Our Skills</a>
+    <a href="impact.html" data-page="impact.html">Impact</a>
+    <a href="enrol.html" data-page="enrol.html">Enrol</a>
+    <a href="contact.html" data-page="contact.html">Contact</a>
+    <a href="donate.html" data-page="donate.html" class="nav-cta">Donate</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Our Skills</a>
+  <a href="impact.html">Impact</a>
+  <a href="enrol.html">Enrol</a>
+  <a href="contact.html">Contact</a>
+  <a href="donate.html" style="color:var(--green);font-weight:700;">Donate →</a>
+</div>
+
+<!-- ════════════════════════════════════════ CONTACT ════════════════════════════════════════ -->
+<div class="page active" id="page-contact">
+  <div class="contact-hero">
+    <div class="container">
+      <div class="section-tag">Get In Touch</div>
+      <div class="section-title">We'd love to hear from you</div>
+      <p class="section-sub">Whether you want to enrol, donate, mentor, or partner — reach out and let's talk.</p>
+    </div>
+  </div>
+
+  <div class="contact-main">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <div class="section-tag">Contact Info</div>
+          <div class="section-title" style="font-size:1.6rem;margin-bottom:1.5rem;">Reach us directly</div>
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="contact-icon">📍</div>
+              <div><h4>Location</h4><p>Harare, Zimbabwe<br>Community training venues updated monthly</p></div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">📧</div>
+              <div><h4>Email</h4><p><a href="mailto:info@skillrise.org">info@skillrise.org</a><br>We reply within 24 hours</p></div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">📱</div>
+              <div><h4>WhatsApp</h4><p><a href="#">+263 7X XXX XXXX</a><br>Fastest way to reach us</p></div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">📘</div>
+              <div><h4>Social Media</h4><p><a href="#">Facebook: SkillRise Initiative</a><br><a href="#">Instagram: @skillrise_zw</a></p></div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form-box" id="contactForm" data-success="contactSuccess">
+          <h3>Send us a message</h3>
+          <div class="sub">Fill in the form and we'll get back to you shortly.</div>
+          <input type="hidden" name="subject" value="New SkillRise contact message"/>
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off"/>
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" name="First Name" placeholder="First name" required/></div>
+            <div class="form-group"><label>Last Name</label><input type="text" name="Last Name" placeholder="Last name" required/></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" name="Email" placeholder="your@email.com" required/></div>
+          <div class="form-group">
+            <label>Subject</label>
+            <select name="Enquiry Type">
+              <option>I want to enrol</option>
+              <option>I want to donate</option>
+              <option>I want to become a mentor</option>
+              <option>Partnership / sponsorship</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea name="Message" placeholder="Tell us what's on your mind…" style="min-height:100px;" required></textarea></div>
+          <button type="submit" class="submit-btn">Send Message →</button>
+          <div class="success-msg" id="contactSuccess" style="display:none;">✅ Message sent! We'll get back to you within 24 hours.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><span class="logo">Skill<span>Rise</span></span><p>Equipping young people with the skills to build their own futures.</p></div>
+        <div class="footer-col"><h5>Pages</h5><a href="index.html">Home</a><a href="about.html">About</a><a href="skills.html">Skills</a><a href="impact.html">Impact</a></div>
+        <div class="footer-col"><h5>Get Involved</h5><a href="enrol.html">Enrol</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h5>Contact</h5><a href="#">info@skillrise.org</a><a href="#">WhatsApp</a><a href="#">Facebook</a></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 SkillRise Initiative.</p><p>Built with purpose 🌱</p></div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
