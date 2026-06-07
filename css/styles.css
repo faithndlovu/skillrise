@@ -23,7 +23,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .nav-logo{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--green);letter-spacing:-0.02em;cursor:pointer;text-decoration:none;}
 .nav-logo span{color:var(--amber);}
 .nav-logo-img{height:50px;width:auto;display:block;}
-.footer-logo-img{box-sizing:content-box;height:58px;width:auto;display:block;margin-bottom:0.85rem;background:#fff;padding:10px 16px;border-radius:12px;}
+.footer-logo-img{height:60px;width:auto;display:block;margin-bottom:0.85rem;}
 .nav-links{display:flex;gap:1.75rem;align-items:center;}
 .nav-links a{font-size:0.875rem;font-weight:500;color:var(--muted);text-decoration:none;cursor:pointer;transition:color 0.2s;padding:0.25rem 0;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s;}
 .nav-links a:hover,.nav-links a.active{color:var(--green);border-bottom-color:var(--green-mid);}
@@ -135,6 +135,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .skill-detail-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.08);}
 .skill-card-top{padding:2rem 2rem 1.25rem;border-bottom:1px solid var(--border);}
 .skill-card-emoji{font-size:2.5rem;margin-bottom:1rem;}
+.skill-card-img{width:100%;height:190px;object-fit:cover;display:block;}
 .skill-card-top h3{font-size:1.15rem;font-weight:600;color:var(--dark);margin-bottom:0.5rem;}
 .skill-card-top p{font-size:0.85rem;color:var(--muted);line-height:1.65;}
 .skill-card-bottom{padding:1.25rem 2rem;display:flex;gap:0.5rem;flex-wrap:wrap;}
@@ -254,17 +255,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .skill-checkbox input{accent-color:var(--green);}
 
 /* ── FOOTER ── */
-footer{background:var(--dark);padding:4rem 3rem 2rem;}
+footer{background:var(--white);padding:4rem 3rem 2rem;border-top:1px solid var(--border);}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem;}
-.footer-brand .logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--white);display:block;margin-bottom:0.75rem;}
-.footer-brand .logo span{color:var(--amber-mid);}
-.footer-tagline{font-style:italic;font-size:0.82rem;color:var(--amber-mid);margin-bottom:0.75rem;}
-.footer-brand p{font-size:0.82rem;color:rgba(255,255,255,0.4);line-height:1.7;max-width:240px;}
-.footer-col h5{font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1rem;}
-.footer-col a{display:block;font-size:0.85rem;color:rgba(255,255,255,0.55);text-decoration:none;margin-bottom:0.5rem;cursor:pointer;transition:color 0.2s;}
-.footer-col a:hover{color:#fff;}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.07);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
-.footer-bottom p{font-size:0.75rem;color:rgba(255,255,255,0.25);}
+.footer-brand .logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--text);display:block;margin-bottom:0.75rem;}
+.footer-brand .logo span{color:var(--blue);}
+.footer-tagline{font-style:italic;font-size:0.82rem;color:var(--blue);margin-bottom:0.75rem;}
+.footer-brand p{font-size:0.82rem;color:var(--muted);line-height:1.7;max-width:240px;}
+.footer-col h5{font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text);margin-bottom:1rem;}
+.footer-col a{display:block;font-size:0.85rem;color:var(--muted);text-decoration:none;margin-bottom:0.5rem;cursor:pointer;transition:color 0.2s;}
+.footer-col a:hover{color:var(--blue);}
+.footer-bottom{border-top:1px solid var(--border);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.footer-bottom p{font-size:0.75rem;color:var(--muted);}
 
 /* ── RESPONSIVE ── */
 @media(max-width:860px){
