@@ -293,3 +293,17 @@ footer{background:var(--white);padding:4rem 3rem 2rem;border-top:1px solid var(-
   .form-row{grid-template-columns:1fr;}
   .skill-checkboxes{grid-template-columns:1fr;}
 }
+
+/* ── Wallpaper background on every page hero ── */
+.home-hero-bg,.about-hero,.skills-hero,.impact-hero,.donate-hero,.contact-hero,.enrol-hero{
+  background:linear-gradient(rgba(10,16,28,0.55),rgba(10,16,28,0.7)),url('../images/wallpaper.jpg') center 22% / cover no-repeat;
+}
+.impact-hero .section-title,.donate-hero .section-title{color:#fff;}
+.impact-hero .section-sub,.donate-hero .section-sub{color:rgba(255,255,255,0.85);}
+.impact-hero .section-tag,.donate-hero .section-tag{color:var(--amber-mid);}
+
+/* ── Photo gallery (real images) ── */
+.gallery-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));grid-template-rows:none;grid-auto-rows:240px;}
+.gallery-item:nth-child(1){grid-column:auto;grid-row:auto;}
+.gallery-item{overflow:hidden;background:var(--surface);}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;}
