@@ -53,6 +53,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 .hero-blob1{position:fixed;top:-80px;right:-160px;width:550px;height:550px;background:var(--green-light);border-radius:50%;z-index:-1;opacity:0.55;}
 .hero-blob2{position:fixed;bottom:-60px;left:-80px;width:380px;height:380px;background:var(--amber-light);border-radius:50%;z-index:-1;opacity:0.45;}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--teal-light);color:var(--teal);font-size:0.73rem;font-weight:700;padding:0.35rem 0.9rem;border-radius:50px;margin-bottom:1.5rem;letter-spacing:0.06em;text-transform:uppercase;}
+.home-hero-bg{background:linear-gradient(rgba(10,16,28,0.78),rgba(10,16,28,0.82)),url('../images/wallpaper.jpg') center/cover no-repeat;}
+.home-hero-bg .hero h1{color:#fff;}
+.home-hero-bg .hero h1 em{color:var(--amber-mid);}
+.home-hero-bg .hero-sub{color:rgba(255,255,255,0.85);font-weight:400;}
+.home-hero-bg .btn-outline{color:#fff;border-color:#fff;}
+.home-hero-bg .btn-outline:hover{background:#fff;color:var(--blue);}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,5vw,4.2rem);font-weight:900;line-height:1.08;letter-spacing:-0.035em;color:var(--dark);margin-bottom:1.25rem;}
 .hero h1 em{font-style:italic;color:var(--green-mid);}
 .hero-sub{font-size:1.05rem;font-weight:300;color:var(--muted);line-height:1.8;max-width:460px;margin-bottom:2rem;}
